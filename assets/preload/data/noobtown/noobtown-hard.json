@@ -6913,8 +6913,7 @@
 			}
 		],
 		"player2": "Noob",
-		"player3": null,
-		"song": "NoobTown",
+		"song": "noobtown",
 		"stage": "crossroads",
 		"needsVoices": true,
 		"validScore": true,
