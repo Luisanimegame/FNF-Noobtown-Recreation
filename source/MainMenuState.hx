@@ -110,7 +110,7 @@ class MainMenuState extends MusicBeatState
 		for (i in 0...optionShit.length)
 		{
 			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
-			var menuItem:FlxSprite = new FlxSprite(100, (i * 240)  + offset);
+			var menuItem:FlxSprite = new FlxSprite(-50, (i * 240)  + offset);
 			menuItem.scale.x = scale;
 			menuItem.scale.y = scale;
 			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
@@ -236,7 +236,14 @@ class MainMenuState extends MusicBeatState
 								switch (daChoice)
 								{
 									case 'play':
-										MusicBeatState.switchState(new FreeplayState());
+										PlayState.storyPlaylist = ['noobtown'];
+										PlayState.isStoryMode = true;
+
+										PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase(), PlayState.storyPlaylist[0].toLowerCase());
+										PlayState.campaignScore = 0;
+										PlayState.campaignMisses = 0;
+										LoadingState.loadAndSwitchState(new PlayState(), true);
+										FreeplayState.destroyFreeplayVocals();
 									case 'credits':
 										MusicBeatState.switchState(new CreditsState());
 									case 'options':
