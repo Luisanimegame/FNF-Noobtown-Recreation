@@ -172,9 +172,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 	{
 		FlxG.sound.play(Paths.sound('hitsound'), ClientPrefs.hitsoundVolume);
 	}
-}
-
-function onChangeHitboxLOL()
+	
+	function onChangeHitboxLOL()
 	{
 		alpha = ClientPrefs.HitboxLOL;
 	}
