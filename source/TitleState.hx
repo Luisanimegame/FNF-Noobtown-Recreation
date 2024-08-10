@@ -280,7 +280,7 @@ class TitleState extends MusicBeatState
 
 		logoBl.antialiasing = ClientPrefs.globalAntialiasing;
 		logoBl.animation.addByPrefix('bump', 'LogoBop', 24, false);
-		logoBl.setGraphicSize(Std.int(logoBl.width * 1.50));
+		logoBl.setGraphicSize(Std.int(logoBl.width * 1.25));
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
 		logoBl.screenCenter();
