@@ -175,6 +175,6 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 	
 	function onChangeHitboxLOL()
 	{
-		alpha = ClientPrefs.HitboxLOL;
+		hint.alpha = ClientPrefs.HitboxLOL;
 	}
 }
