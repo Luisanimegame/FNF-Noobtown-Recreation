@@ -280,9 +280,10 @@ class TitleState extends MusicBeatState
 
 		logoBl.antialiasing = ClientPrefs.globalAntialiasing;
 		logoBl.animation.addByPrefix('bump', 'LogoBop', 24, false);
+		magenta.setGraphicSize(Std.int(magenta.width * 1.50));
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
-		// logoBl.screenCenter();
+		logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
 		swagShader = new ColorSwap();
