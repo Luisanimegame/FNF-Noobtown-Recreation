@@ -82,8 +82,8 @@ class MainMenuState extends MusicBeatState
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 
-		camFollow = new FlxObject(0, 0, 1, 1);
-		camFollowPos = new FlxObject(0, 0, 1, 1);
+		camFollow = new FlxObject(0, 0, 0.50, 0.50);
+		camFollowPos = new FlxObject(0, 0, 0.50, 0.50);
 		add(camFollow);
 		add(camFollowPos);
 
@@ -109,8 +109,8 @@ class MainMenuState extends MusicBeatState
 
 		for (i in 0...optionShit.length)
 		{
-			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 40;
-			var menuItem:FlxSprite = new FlxSprite(170, (i * 240)  + offset);
+			var offset:Float = 158 - (Math.max(optionShit.length, 4) - 4) * 80;
+			var menuItem:FlxSprite = new FlxSprite(140, (i * 240)  + offset);
 			menuItem.scale.x = scale;
 			menuItem.scale.y = scale;
 			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
