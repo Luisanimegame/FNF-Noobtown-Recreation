@@ -26,8 +26,8 @@ class FlashingState extends MusicBeatState
 		warnText = new FlxText(0, 0, FlxG.width,
 			"Noobtown Recreation\n
 			So Yeah, Flashing Lights and bruh\n
-			A ~ False[ENTER]\n
-			B ~ True[ESCAPE]",	       
+			A ~ False [ENTER]\n
+			B ~ True [ESCAPE]",	       
 			32);
 		warnText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
 		warnText.screenCenter(Y);
